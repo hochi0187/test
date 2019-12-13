@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Song+Myung&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
 
 div{
     display: block;
@@ -50,7 +51,8 @@ p{
 
 
 .logo {
-    width: 330px;
+   font-family: 'Bungee', cursive;
+    width: 430px;
     pointer-events: none;
     position: relative;
     margin: 35px 0px 33px calc((100% - 980px) * 0.5);
@@ -81,11 +83,51 @@ p{
     margin-left: 20px;
     text-decoration:none; 
     color: white;  
-    font-size:25;
+    font-size:21px;
     display: block;
+    text-transform: uppercase;
+    font-weight: 300;
+
 }
 
  
+#mainnavcontainer .line {
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    margin: 10px 0 0 0;
+    background: #FF1847;
+  }
+#mainnavcontainer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+  }
+#mainnavcontainer ul li {
+    margin: 0 40px 0 0;
+    opacity: 0.4;
+    transition: all 0.4s ease;
+  }
+#mainnavcontainer ul li:hover {
+    opacity: 0.7;
+  }
+#mainnavcontainer ul li.active {
+    opacity: 1;
+  }
+#mainnavcontainer ul li:last-child {
+    margin-right: 0;
+  }
+#mainnavcontainer ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    font-size: 20px;
+  }
+  
 
 #mainnavcontainer {
     width:500px;
@@ -100,6 +142,9 @@ p{
     vertical-align: baseline;
     position: absolute;
     float: left;
+    font-family: "Lato", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: 12px;
 
 }
 
@@ -109,7 +154,7 @@ p{
     line-height: normal;
     margin: 0;
     letter-spacing: normal;
-    font-size: 43px;
+    font-size: 37px;
     text-align:left;
 
 }
