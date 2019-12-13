@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Song+Myung&display=swap');
+
+div{
+    display: block;
+}
+
+
+a { text-decoration: none; color: white; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
+
+
+
+
+body {
+    background-color: #000000;
+    font-size: 10px;
+    font-family: 'Song Myung', serif;
+    color : #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#HEADER{
+    position: relative;
+    display: grid;
+    height: auto;
+    width: 100%;
+    min-height: auto;
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+    margin-top: 0;
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+    min-width: 980px;
+}
+
+
+.logo {
+    width: 330px;
+    pointer-events: none;
+    position: relative;
+    margin: 35px 0px 33px calc((100% - 980px) * 0.5);
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+    height:auto;
+    background-image: -webkit-linear-gradient(80deg, #fff, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
+    
+   }
+
+   
+@-webkit-keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    to {
+      -webkit-filter: hue-rotate(-360deg);
+    }
+  }
+
+  #mainnavcontainer ul li{
+    list-style:none;
+    float: left;
+    margin-left: 20px;
+    text-decoration:none; 
+    color: white;  
+    font-size:25;
+    display: block;
+}
+
+ 
+
+#mainnavcontainer {
+    width:500px;
+    height: 29px;
+    overflow-x: visible;
+    left: 342px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+    margin-left: calc((100% - 980px) / 2);
+    margin: 87px 0px 34px calc((100% - 980px) * 0.5);
+    vertical-align: baseline;
+    position: absolute;
+    float: left;
+
+}
+
+
+.font0{
+    
+    line-height: normal;
+    margin: 0;
+    letter-spacing: normal;
+    font-size: 43px;
+    text-align:left;
+
+}
+
+abbr, acronym, address, applet, b, big, blockquote, body, button, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, iframe, img, ins, kbd, label, legend, li, nav, object, ol, p, pre, q, s, samp, section, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, title, tr, tt, u, ul, var{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+
+}
