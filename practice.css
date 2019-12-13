@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Song+Myung&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
 
 div{
     display: block;
@@ -51,8 +52,8 @@ p{
 
 
 .logo {
-   font-family: 'Bungee', cursive;
-    width: 430px;
+  font-family: 'Orbitron', sans-serif;
+    width: 330px;
     pointer-events: none;
     position: relative;
     margin: 35px 0px 33px calc((100% - 980px) * 0.5);
@@ -125,7 +126,7 @@ p{
     display: block;
     font-weight: 600;
     letter-spacing: 0.2em;
-    font-size: 20px;
+    font-size: 15px;
   }
   
 
@@ -166,4 +167,36 @@ abbr, acronym, address, applet, b, big, blockquote, body, button, caption, cente
     outline: 0;
     vertical-align: baseline;
 
+}
+/* mainContent */
+   
+#mainPageinlineContent {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+#mainPageinlineContent-gridWrapper {
+  pointer-events: none;
+}
+
+#mainPageinlineContent-gridContainer {
+  position: static;
+  display: grid;
+  height: auto;
+  width: 100%;
+  min-height: 550px;
+  grid-template-rows: min-content min-content min-content 1fr;
+  grid-template-columns: 100%;
+  padding-bottom: 0px;
+  box-sizing: border-box;
+}
+
+#pBlock {
+  position: relative;
+  margin: 53px 0px -38px calc((100% - 980px) * 0.5);
+  left: 33px;
+  grid-area: 1 / 1 / 4 / 2;
+  justify-self: start;
+  align-self: start;
 }

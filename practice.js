@@ -1,3 +1,5 @@
+//네비게이션 메뉴 애니메이션-
+
 var nav = $('nav');
 var line = $('<div />').addClass('line');
 
