@@ -3,9 +3,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="practice.css">
+    <link rel="stylesheet" href="practice.css">    
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <title>Document</title>
+    
 </head>
 <body >
     
@@ -13,26 +14,84 @@
     <div id="HEADER">
         <h1 class="logo">
            <p class="font0">Jeong Hyun Ho</p>
-           <p class="font0" style="font-size:18px;">Web Developer</p>
+           <p class="font0" style="font-size:20px;">Web Developer</p>
         </h1>
-        <nav id="mainnavcontainer">
-            <ul class="mainnavigation">
-                <li><a class="menulink"></a><a href="#">Home</a></li>
-                <li><a class="menulink"></a><a href="#">Resume</a></li>
-                <li><a class="menulink"></a><a href="#">Projects</a></li>
-                <li><a class="menulink"></a><a href="#">Contact</a></li>
-    </ul> 
+        <nav class="gnb-menu">
+            <a href="">HOME</a>
+            <a href="/RESUME">RESUME</a>
+            <a href="">PROJECTS</a>
+            <a href="">CONTACT</a>
+         
     </nav>
+    
+</div>
+    <!--메인페이지 그리드-->
     <div id="mainPageinlineContent">
+      
       <div id="mainPageinlineContent-gridWrapper">
           <div id="mainPageinlineContent-gridContainer">
                <div id="pBlock">
-                   <div class="photo"><img src="https://i.imgur.com/aPyx4cp.png" width="385" height="380"></div>
+                   <img id="photo1" src="https://s5.gifyu.com/images/KakaoTalk_20191213_164723029.jpg" >
                 </div>
-          </div>
+                <div id=WRchTxt6>
+                    <h1 class="font3">Hello,</h1>
+                    <h1 class="font4">a bit about me:</h1>
+                </div>
+                <!--버튼-->
+                <div id ="StBttn3">
+                    <div id="Stbttn3link" OnClick="location.href='#'"><span class="Stbbtnlable">MY RESUME</span></div></div>
+                <div id ="StBttn4">
+                    <a href="" id="Stbttn4link"><span class="Stbbtnlable">MY WORK</span></a>
+                </div>
+                <div id ="StBttn5">
+                    <a href="#" id="Stbttn5link"><span class="Stbbtnlable">MY SKILLS</span></a>
+                </div>
+                <!--머리글-->
+                <div id="WRchTxtg">
+                    <p class="font8">01. 상서로운 말은 하지 마라. 욕이나 비하 하는 말은 말 가운데 가장 낮은 하수다. 02. 상대가 제일 싫어하는 말은 절대 하지 마라라아라아라아라. 누구나 정말 듣기 싫은 말이 있다. 그 말은 뇌관이다. 건드리면 폭발한다. 03. 남과 비교 하는 말은 피하</p>                
+                </div>
+
+               
+
+                <section class="next-page">
+                    
+                </section>
+            
+
+
+          
+
       </div>
+     </div>
     </div>
-    
+
+
+
+
     <script src="practice.js"></script>
+
 </body>
+
+<footer id="site-footer">
+        <div class="social-buttons">
+            <a href=""><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-comment fa-3x" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+        </div>
+        </div>
+
+        <nav id="mini-list">
+            <ul class="miniList">
+                <a href="#"><li>HOME</li></a>
+                <a href="/resume"><li>RESUME</li></a>
+                <a href="#"><li>PROJECTS</li></a>
+                <a href="#"><li>CONTACT</li></a>
+
+            </ul>
+        </nav>
+    
+</footer>
+
+
 </html>
