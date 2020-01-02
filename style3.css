@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css?family=Song+Myung&display=swap');
+
+body {
+   
+    font-family: 'Song Myung', serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    height: 100vh;
+    background-color: #08121c;
+    background-image: radial-gradient(white, rgba(255, 255, 255, 0.2) 2px, transparent 10px), radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 10px), radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 5px), radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 1px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    overflow: hidden;
+
+  }
+
+  .nav{
+    height: 120px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+  }
+
+  .content{
+    height: 900px;
+    width: 100%;
+    position: relative;
+    float: left;
+  }
+
+  .name{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 100px;
+
+  }
+
+  .container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 40%;
+    left: 0;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+  }
+  .container p {
+    font-size: 20px;
+  }
+  .container a {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    overflow: hidden;
+    top: 5px;
+  }
+  .container a:after {
+    content: "";
+    position: absolute;
+    background: black;
+    height: 2px;
+    width: 0%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    left: 50%;
+    bottom: 0;
+    transition: 0.35s ease;
+  }
+  .container a:hover:after, .container a:focus:after, .container a:active:after {
+    width: 100%;
+  }
+  
+  h1 {
+    position: relative;
+    text-align: center;
+    font-family: "Vollkorn", serif;
+  }
+  
+  .button_container {
+    position: fixed;
+    top: 5%;
+    right: 2%;
+    height: 27px;
+    width: 35px;
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity 0.25s ease;
+  }
+  .button_container:hover {
+    opacity: 0.7;
+  }
+  .button_container.active .top {
+    -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+            transform: translateY(11px) translateX(0) rotate(45deg);
+    background: black;
+  }
+  .button_container.active .middle {
+    opacity: 0;
+    background: black;
+  }
+  .button_container.active .bottom {
+    -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+            transform: translateY(-11px) translateX(0) rotate(-45deg);
+    background: black;
+  }
+  .button_container span {
+    background: #fff;
+    border: none;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.35s ease;
+    cursor: pointer;
+  }
+  .button_container span:nth-of-type(2) {
+    top: 11px;
+  }
+  .button_container span:nth-of-type(3) {
+    top: 22px;
+  }
+  
+  .overlay {
+    position: fixed;
+    background: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0.5;
+    visibility: hidden;
+    transition: opacity 0.7, visibility 0.35s, height 0.35s;
+    overflow: hidden;
+  }
+  .overlay.open {
+    opacity: 0.9;
+    visibility: visible;
+    height: 100%;
+  }
+  .overlay.open li {
+    -webkit-animation: fadeInRight 0.5s ease forwards;
+            animation: fadeInRight 0.5s ease forwards;
+    -webkit-animation-delay: 0.35s;
+            animation-delay: 0.35s;
+  }
+  .overlay.open li:nth-of-type(2) {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+  }
+  .overlay.open li:nth-of-type(3) {
+    -webkit-animation-delay: 0.45s;
+            animation-delay: 0.45s;
+  }
+  .overlay.open li:nth-of-type(4) {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+  }
+  .overlay nav {
+    position: relative;
+    height: 70%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    font-size: 50px;
+    font-family: "Vollkorn", serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  .overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+  }
+  .overlay ul li {
+    display: block;
+    height: 25%;
+    height: calc(100% / 4);
+    min-height: 50px;
+    position: relative;
+    opacity: 0;
+  }
+  .overlay ul li a {
+    display: block;
+    position: relative;
+    color: black;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+    width: 100%;
+  }
+  .overlay ul li a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: 3px;
+    background: black;
+    transition: 0.35s;
+  }
+  
+  @-webkit-keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      left: 20%;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
+  
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      left: 20%;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
+  
+
+
+
+  .star {
+    position: absolute;
+    z-index: 100;
+    top: 50px;
+    left: 0;
+    background-color: #fff;
+    width: 3px;
+    height: 3px;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.02), 0 0 0 10px rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    -webkit-animation: shooting 5s linear infinite;
+            animation: shooting 5s linear infinite;
+  }
+  .star:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 3px;
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.4) 100%);
+  }
+  
+  .star-2 {
+    top: 100px;
+    left: -200px;
+    -webkit-animation: shooting 8s 1s linear infinite;
+            animation: shooting 8s 1s linear infinite;
+  }
+  
+  .star-3 {
+    top: 250px;
+    left: -350px;
+    -webkit-animation: shooting 3s 2s linear infinite;
+            animation: shooting 3s 2s linear infinite;
+  }
+  
+  .star-4 {
+    top: 50px;
+    left: -100px;
+    -webkit-animation: shooting 3s 2s linear infinite;
+            animation: shooting 3s 2s linear infinite;
+  }
+  
+  .star-5 {
+    top: 150px;
+    left: -150px;
+    -webkit-animation: shooting 3s 2s linear infinite;
+            animation: shooting 3s 2s linear infinite;
+  }
+  
+  @-webkit-keyframes shooting {
+    0% {
+      -webkit-transform: translate(-100px, -100px) rotate(45deg) scale(1);
+              transform: translate(-100px, -100px) rotate(45deg) scale(1);
+    }
+    90% {
+      -webkit-transform: translate(calc(100% + 400px), calc(100% + 400px)) rotate(45deg) scale(1.5);
+              transform: translate(calc(100% + 400px), calc(100% + 400px)) rotate(45deg) scale(1.5);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes shooting {
+    0% {
+      -webkit-transform: translate(-100px, -100px) rotate(45deg) scale(1);
+              transform: translate(-100px, -100px) rotate(45deg) scale(1);
+    }
+    90% {
+      -webkit-transform: translate(calc(100% + 400px), calc(100% + 400px)) rotate(45deg) scale(1.5);
+              transform: translate(calc(100% + 400px), calc(100% + 400px)) rotate(45deg) scale(1.5);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
