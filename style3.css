@@ -125,6 +125,56 @@ body {
   .button_container span:nth-of-type(3) {
     top: 22px;
   }
+
+  .intro-buttons{
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+
+
+  }
+
+  .intro-buttons .intromenu {
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+
+  .intro-buttons .intromenu h5 {
+    position: relative;
+    list-style: none;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: #fff;
+  }
+
+  .intro-buttons ul li:before,
+  .intro-buttons ul li:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    border-radius: 50%;
+    filter: blur(20px);
+    opacity: 0;
+    transition: 1s ;
+
+
+  }
+
+  .intro-buttons ul li:after{
+
+  }
+
   
   .overlay {
     position: fixed;

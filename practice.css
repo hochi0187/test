@@ -148,7 +148,7 @@ p{
     margin-inline-end: 0px;
 }
 
-#HEADER{
+header{
     position: relative;
     display: grid;
     height: auto;
